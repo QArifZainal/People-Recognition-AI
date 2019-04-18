@@ -8,9 +8,9 @@ Purpose of file is to test camera
 import numpy as np
 import cv2
 import random
-from utils import CFEVideoConf, image_resize
 import glob
 import math
+import utils
 
 # define
 cap = cv2.VideoCapture(0)
