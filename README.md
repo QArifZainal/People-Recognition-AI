@@ -15,6 +15,7 @@ https://www.youtube.com/playlist?list=PLEsfXFp6DpzRyxnU-vfs3vk-61Wpt7bOS
 
 Livestreaming over network (Distributed Pipeline):
 
+https://www.pyimagesearch.com/2019/04/05/table-of-contents-raspberry-pi-for-computer-vision/
 https://www.pyimagesearch.com/2019/04/15/live-video-streaming-over-network-with-opencv-and-imagezmq/
 https://github.com/jeffbass/imagezmq/tree/master/imagezmq
 https://github.com/jeffbass/imagezmq/blob/master/docs/imagezmq-uses.rst
