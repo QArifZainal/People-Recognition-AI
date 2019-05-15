@@ -61,6 +61,7 @@ ACTIVE_CHECK_SECONDS = ESTIMATED_NUM_PIS * ACTIVE_CHECK_PERIOD
 # in a single "dashboard"
 mW = args["montageW"]
 mH = args["montageH"]
+key = cv2.waitKey(1) & 0xFF
 print("[INFO] detecting: {}...".format(", ".join(obj for obj in
 	CONSIDER)))
 
@@ -142,13 +143,13 @@ while True:
 	montages = build_montages(frameDict.values(), (w, h), (mW, mH))
 
 	# display the montage(s) on the screen
-	for (i, montage) in enumerate(montages):
-		cv2.imshow("Home pet location monitor ({})".format(i),
-			montage)
-
+#	for (i, montage) in enumerate(montages):
+		#cv2.imshow("Home pet location monitor ({})".format(i),
+		#	montage)
+    
 	# detect any kepresses
-	key = cv2.waitKey(1) & 0xFF
-
+#    
+    
 	# if current time *minus* last time when the active device check
 	# was made is greater than the threshold set then do a check
 	if (datetime.now() - lastActiveCheck).seconds > ACTIVE_CHECK_SECONDS:
